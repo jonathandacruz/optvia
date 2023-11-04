@@ -65,7 +65,7 @@ const router = createRouter({
   ],
 })
 
-/* router.beforeEach((to, from, next) => {
+ router.beforeEach((to, from, next) => {
   if (to.path !== '/login' && to.path !== '/register' && !authService.isLoggedIn()) {
     next('/login')
   }
@@ -74,6 +74,6 @@ const router = createRouter({
     next()
   }
 })
-*/
+
 
 export default router
