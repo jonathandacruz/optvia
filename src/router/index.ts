@@ -67,18 +67,11 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  console.log('to:', to.path)
-  console.log('isLoggedIn:', authService.isLoggedIn())
-
-  if (to.path !== '/login' && to.path !== '/register' && !authService.isLoggedIn()) {
-    console.log('Redirecting to /login')
+  if (to.path !== '/login' && to.path !== '/register' && !authService.isLoggedIn())
     next('/login')
-  }
-  else {
-    // Caso contrário, continue normalmente
-    console.log('Continuing to:', to.path)
+
+  else
     next()
-  }
 })
 
 export default router
