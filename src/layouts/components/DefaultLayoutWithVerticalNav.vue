@@ -104,48 +104,7 @@ const upgradeBanner = computed(() => {
           to: '/trips',
         }"
       />
-
-      <!-- 👉 User Interface -->
-      <VerticalNavSectionTitle
-        :item="{
-          heading: 'Predições',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Typography',
-          icon: 'mdi-alpha-t-box-outline',
-          to: '/typography',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Icons',
-          icon: 'bx-show',
-          to: '/icons',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Cards',
-          icon: 'bx-credit-card',
-          to: '/cards',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Tables',
-          icon: 'bx-table',
-          to: '/tables',
-        }"
-      />
-      <VerticalNavLink
-        :item="{
-          title: 'Form Layouts',
-          icon: 'mdi-form-select',
-          to: '/form-layouts',
-        }"
-      />
+ 
     </template>
 
     <!-- 👉 Pages -->
